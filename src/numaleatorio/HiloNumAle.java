@@ -24,8 +24,8 @@ public class HiloNumAle extends Thread {
             
             // Llamar al método para agregar el número aleatorio al final del archivo
             NumAleatorio.agregarNumeroAlFinal("datos.txt", numAleatorio);
-
-            Thread.sleep(1000);// Agregado para simular una operación  
+            
+            Thread.sleep(1000);//Espera 1 segundos para la llegada del siguiente 
             System.out.println("Hilo " + num + " libera el semáforo.");
             semaforo.release();//se libera el semaforo
             
